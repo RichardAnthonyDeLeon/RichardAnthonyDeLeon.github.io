@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilos.css" type="text/css">
+    <title>CalculadoraDeSalarios</title>
+</head>
+<body>
+    <h3>Richard Anthony De León Milian</h3>
+    <h3>0901-22-10245</h3>
+
+    <br><br><br><br><br><br>
+    <h1>Calculadora de Salarios</h1>
+    <form id="empleadosForm">
+        <label for="numEmpleados">Número de Empleados: </label>
+        <input class="numeroEmpleados" type="number" id="numEmpleados"> 
+        <br><br>
+        <div id="datosEmpleados"></div>
+        <button class="buton" type="button" onclick="calcularSalarios()">Calcular Salarios</button>
+        <br><br>
+        <div id="resultados"></div>
+    </form>
+
+    <script>
+        function calcularSalarios() {
+            const numEmpleados = parseInt(document.getElementById("numEmpleados").value);
+            let totalSalarios = 0;
+            let totalHorasTrabajadas = 0;
+
+            for (let i = 1; i <= numEmpleados; i++) {
+                const nombreEmpleado = prompt(`Ingrese el nombre del empleado #${i}:`);
+                if (nombreEmpleado=='pedro'){
+                    break;
+                }
+                const salarioMensual = parseFloat(prompt(`Ingrese el salario mensual de ${nombreEmpleado}:`));
+                const bonificacion = parseFloat(prompt(`Ingrese la bonificación para ${nombreEmpleado}:`));
+                const igss = salarioMensual * 0.048; // Suponiendo que el IGSS es el 4.8% del salario
+                totalSalarios += (salarioMensual - igss + bonificacion);
+
+                let horasTrabajadas = 0;
+                while (true) {
+                    horasTrabajadas = parseFloat(prompt(`Ingrese las horas extras trabajadas por ${nombreEmpleado} (valor positivo, 0 para finalizar):`));
+                    if (horasTrabajadas < 0) {
+                        alert("Las horas extras deben ser un valor positivo. Intenta de nuevo.");
+                    } else {
+                        totalHorasTrabajadas += horasTrabajadas; // totalHorasTrabajadas = totalHorasTrabajadas + horasTrabajadas
+                        break;
+                    }
+                }
+
+                let ornato = 0;
+                if (salarioMensual < 500) {
+                    ornato = 4;
+                } else if (salarioMensual >= 500.01 && salarioMensual <= 1000) {
+                    ornato = 10;
+                } else if (salarioMensual >= 1000.01 && salarioMensual <= 3000) {
+                    ornato = 15;
+                } else if (salarioMensual >= 3000.01 && salarioMensual <= 6000) {
+                    ornato = 50;
+                } else if (salarioMensual >= 6000.01 && salarioMensual <= 9000) {
+                    ornato = 75;
+                }
+
+                document.getElementById("datosEmpleados").innerHTML += `Empleado #${i}: ${nombreEmpleado}, Salario Mensual: Q${salarioMensual.toFixed(2)}, Bonificación: Q${bonificacion.toFixed(2)}, IGSS: Q${igss.toFixed(2)}, Ornato: Q${ornato} <br>`;
+            }
+
+            const salarioPromedio = totalSalarios / numEmpleados;
+            document.getElementById("resultados").innerHTML = `Total de Salarios: Q${totalSalarios.toFixed(4)} <br>Promedio de Salarios: Q${salarioPromedio.toFixed(2)} <br>Total de Horas Extras: ${totalHorasTrabajadas.toFixed(2)} horas`;
+        }
+    </script>
+</body>
+</html>
