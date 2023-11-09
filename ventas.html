@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página de Inicio - Tienda en Línea</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #343a40;
+            color: #ffffff;
+            text-align: center;
+            padding: 20px 0;
+        }
+
+        header h1 {
+            font-size: 2em;
+            margin: 0;
+        }
+
+        .menu {
+            background-color: none;
+            text-align: center;
+            padding: 10px;
+        }
+
+        .menu ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .menu ul li {
+            display: inline-block;
+            margin-right: 20px;
+        }
+
+        .menu ul li a {
+            color: gray;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .main-image {
+            width: 100%;
+            max-height: 400px; /* Ajusta la altura máxima según tus necesidades */
+            object-fit: cover;
+        }
+
+        .product-section {
+            text-align: center;
+            margin: 20px 0;
+        }
+
+        .product-section img {
+            max-width: 300px; /* Ajusta el tamaño máximo de los ejemplos de productos */
+            border: 3px solid #343a40; /* Agrega un marco de color gris oscuro */
+            margin: 10px; /* Espacio entre las imágenes */
+            transition: transform 0.3s ease; /* Agrega una transición para el efecto de movimiento */
+        }
+
+        .product-section img:hover {
+            transform: scale(1.1); /* Efecto de escala al pasar el cursor sobre la imagen */
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Tienda en Línea</h1>
+    </header>
+
+    <div class="menu">
+        <ul>
+            <li><a href="ventas.html">Inicio</a></li>
+            <li><a href="quienesomos.html">Quiénes Somos</a></li>
+            <li><a href="productos.html">Productos</a></li>
+        </ul>
+    </div>
+
+    <div>
+        <!-- Imagen grande rectangular -->
+        <img class="main-image" src="https://www.lavanguardia.com/files/og_thumbnail/files/fp/uploads/2022/03/19/623651e8dc66d.r_d.738-428-11719.jpeg" alt="Imagen Principal">
+    </div>
+
+    <div class="product-section">
+        <!-- Ejemplos de productos -->
+        <img src="https://par2.gt/cdn/shop/products/30054131_0_1200x.jpg?v=1678372454" alt="Producto 1">
+        <img src="https://rsguatemala.com/wp-content/uploads/0172210208.jpg" alt="Producto 2">
+        <img src="https://rsguatemala.com/wp-content/uploads/17222-0942-5-300x300.jpg" alt="Producto 3">
+    </div>
+</body>
+</html>

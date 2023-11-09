@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Productos - Tienda en Línea</title>
+    <style>
+        /* Estilos CSS para la página de productos */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f9fa;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+        }
+
+        header {
+            background-color: #343a40;
+            color: #ffffff;
+            text-align: center;
+            padding: 20px;
+            width: 100%;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2em;
+        }
+
+        main {
+            width: 100%;
+            max-width: 800px; /* Ajusta el ancho máximo según tus preferencias */
+            background-color: #ffffff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1);
+            margin: 20px;
+        }
+
+        section {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr); /* Muestra 3 columnas de productos por fila */
+            gap: 20px; /* Espacio entre productos */
+            margin-bottom: 20px;
+        }
+
+.producto {
+            text-align: center;
+            padding: 10px;
+            border: 1px solid #ced4da;
+            border-radius: 5px;
+        }
+
+        .producto img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        .producto img:hover {
+            border-color: #343a40;
+box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4);
+  transform: translateY(-3%);
+  }
+
+        .producto h3 {
+            margin: 10px 0;
+        }
+
+        .producto p {
+            font-size: 1em;
+        }
+
+
+        
+
+        .comprar-button {
+            display: inline-block;
+            background-color: #343a40;
+            color: #ffffff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 1em;
+            text-decoration: none;
+            transition: background-color 0.3s ease;
+        }
+
+        .comprar-button:hover {
+            background-color: #5a6268;
+        }
+  .menu {
+            background-color: none;
+            text-align: center;
+            padding: 10px;
+        }
+
+        .menu ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .menu ul li {
+            display: inline-block;
+            margin-right: 20px;
+        }
+
+        .menu ul li a {
+            color: gray;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Productos</h1>
+    </header>
+ <div class="menu">
+        <ul>
+            <li><a href="ventas.html">Inicio</a></li>
+            <li><a href="quienesomos.html">Quiénes Somos</a></li>
+            <li><a href="productos.html">Productos</a></li>
+        </ul>
+    </div>
+    <main>
+        <section>
+            <!-- Producto 1 -->
+            <div class="producto">
+                <img src="https://hushpuppies.gt/cdn/shop/products/300540991.jpg?v=1679929617" alt="Producto 1">
+                <h3>Producto 1</h3>
+                <p>Descripción del Producto 1. Precio: Q100.00</p>
+                <a href="pago.html?precio=100.00" class="comprar-button">Comprar</a>
+            </div>
+
+            <!-- Producto 2 -->
+            <div class="producto">
+                <img src="https://f.fcdn.app/imgs/655fc7/www.stadium.com.uy/std/d67d/original/catalogo/068.371449479/700_600/zapato-crosslander-3-wns-brindle-tea.jpg" alt="Producto 2">
+                <h3>Producto 2</h3>
+                <p>Descripción del Producto 2. Precio: Q250.00</p>
+                 <a href="pago.html?precio=250.00" class="comprar-button">Comprar</a>
+            </div>
+            
+            <!-- Producto 3 -->
+            <div class="producto">
+                <img src="https://elitesports.com.gt/wp-content/uploads/2022/10/EB6BE748-50A7-4BF0-8FB9-5184F7D85ACB-1024x1024.jpg" alt="Producto 3">
+                <h3>Producto 3</h3>
+                <p>Descripción del Producto 3. Precio: Q150.00</p>
+                 <a href="pago.html?precio=150.00" class="comprar-button">Comprar</a>
+            </div>
+
+            <!-- Producto 4 -->
+<div class="producto">
+                <img src="https://http2.mlstatic.com/zapatillas-adidas-para-mujer-duramo-9-de-caja-mgvm-D_NQ_NP_882343-MPE30477924750_052019-F.jpg" alt="Producto 4">
+                <h3>Producto 4</h3>
+                <p>Descripción del Producto 4. Precio: Q325.00</p>
+                <a href="pago.html?precio=325.00" class="comprar-button">Comprar</a>
+            </div>
+
+            <!-- Producto 5 -->
+<div class="producto">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS7dbt4wq4qwZuBOekiZdlozhtIsmsMV2MW8g&usqp=CAU" alt="Producto 5">
+                <h3>Producto 5</h3>
+                <p>Descripción del Producto 5. Precio: Q230.00</p>
+              <a href="pago.html?precio=230.00" class="comprar-button">Comprar</a>
+            </div>
+
+            <!-- Producto 6 -->
+<div class="producto">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSYjMGz5J3CyAKDveW4IzNRrQvvVOpmLyqsqg&usqp=CAU" alt="Producto 6">
+                <h3>Producto 6</h3>
+                <p>Descripción del Producto 6. Precio: Q500.00</p>
+                 <a href="pago.html?precio=500.00" class="comprar-button">Comprar</a>
+            </div>
+
+            <!-- Producto 7 -->
+<div class="producto">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQLz7Jacby8Fo9ToxHNoU56iMIejy3h3xHKOw&usqp=CAU" alt="Producto 7">
+                <h3>Producto 7</h3>
+                <p>Descripción del Producto 7. Precio: Q125.00</p>
+               <a href="pago.html?precio=125.00" class="comprar-button">Comprar</a>
+            </div>
+
+            <!-- Producto 8 -->
+<div class="producto">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRU8oq_bODOnrJy42MWz6T_DpMqf5vxIQsyCA&usqp=CAU" alt="Producto 8">
+                <h3>Producto 8</h3>
+                <p>Descripción del Producto 8. Precio: Q235.00</p>
+                <a href="pago.html?precio=235.00" class="comprar-button">Comprar</a>
+            </div>
+
+            <!-- Producto 9 -->
+<div class="producto">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQnpfsdGr1DLQvso8Iv9ZMZFd3zzPgHw_GdyQ&usqp=CAU" alt="Producto 9">
+                <h3>Producto 9</h3>
+                <p>Descripción del Producto 9. Precio: Q800.00</p>
+                <a href="pago.html?precio=800.00" class="comprar-button">Comprar</a>
+            </div>
+
+            <!-- Producto 10 -->
+<div class="producto">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT5gYN7bYdjXBxcKNTNw8Abf5kVX5E7zWnr0A&usqp=CAU" alt="Producto 10">
+                <h3>Producto 10</h3>
+                <p>Descripción del Producto 10. Precio: Q420.00</p>
+                 <a href="pago.html?precio=420.00" class="comprar-button">Comprar</a>
+            </div>
+
+            <!-- Producto 11 -->
+<div class="producto">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTva46JEJYw0EdNcUuDeX4i1GiluptDp_o7hQ&usqp=CAU" alt="Producto 11">
+                <h3>Producto 11</h3>
+                <p>Descripción del Producto 11. Precio: Q550.00</p>
+                 <a href="pago.html?precio=550.00" class="comprar-button">Comprar</a>
+            </div>
+
+            <!-- Producto 12 -->
+<div class="producto">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRz7uNp6jeOWXje5yCiv2KQA9b_G0YcjkSpzg&usqp=CAU" alt="Producto 12">
+                <h3>Producto 12</h3>
+                <p>Descripción del Producto 12. Precio: Q700.00</p>
+               <a href="pago.html?precio=700.00" class="comprar-button">Comprar</a>
+            </div>
+
+        </section>
+    </main>
+</body>
+</html>

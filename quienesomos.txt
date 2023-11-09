@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nosotros - Tienda en Línea</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f9fa;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+        }
+
+        header {
+            background-color: #343a40;
+            color: #ffffff;
+            text-align: center;
+            padding: 20px;
+            width: 100%;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2em;
+        }
+
+        main {
+            width: 100%;
+            max-width: 800px; /* Ajusta el ancho máximo según tus preferencias */
+            background-color: #ffffff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1);
+            margin: 20px;
+        }
+
+        section {
+            margin-bottom: 20px;
+        }
+
+        h2 {
+            font-size: 1.5em;
+            margin: 0;
+            margin-bottom: 20px;
+        }
+  .menu {
+            background-color: none;
+            text-align: center;
+            padding: 10px;
+        }
+
+        .menu ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .menu ul li {
+            display: inline-block;
+            margin-right: 20px;
+        }
+
+        .menu ul li a {
+            color: gray;
+            text-decoration: none;
+            font-weight: bold;
+        }
+ 	 	
+
+        p {
+            font-size: 1em;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>¿Quiénes somos?</h1>
+    </header>
+ <div class="menu">
+        <ul>
+            <li><a href="ventas.html">Inicio</a></li>
+            <li><a href="quienesomos.html">Quiénes Somos</a></li>
+            <li><a href="productos.html">Productos</a></li>
+        </ul>
+    </div>
+
+    <main>
+        <section>
+            <h2>Conócenos</h2>
+              <section>
+            <p>Zapatería IJR ha estado sirviendo a nuestros clientes con los últimos estilos y calzado de alta calidad desde 1995. Nos enorgullecemos de ofrecer una amplia variedad de zapatos para todas las edades y ocasiones, desde elegantes tacones hasta cómodos zapatos deportivos.</p>
+        </section>
+
+        <section>
+            <h2>Nuestra Misión</h2>
+            <p>En Zapatería IJR, nuestra misión es proporcionar a nuestros clientes calzado de calidad que combine estilo, comodidad y durabilidad. Nos esforzamos por ofrecer un excelente servicio al cliente y ayudar a cada persona a encontrar el par perfecto para satisfacer sus necesidades y gustos.</p>
+        </section>
+
+        <section>
+            <h2>Visítanos</h2>
+            <p>Nos encontramos ubicados en Zona 2 Finca el Zapote 10 av. 4ta calle. </p>
+        </section>
+<section>
+        <img src="https://static.vecteezy.com/system/resources/previews/009/125/809/original/ijr-letter-logo-design-with-polygon-shape-ijr-polygon-and-cube-shape-logo-design-ijr-hexagon-logo-template-white-and-black-colors-ijr-monogram-business-and-real-estate-logo-vector.jpg" alt="Logo" style="max-width: 800px;">
+</section>  
+    </main>
+</body>
+</html>
